@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     public float speed = 5.0f; // Adjustable speed in the Inspector
     private int score = 0;
+    public int health = 5;
 
     private void Start()
     {
@@ -35,9 +36,15 @@ public class PlayerController : MonoBehaviour
             // Increment score when player touches a Pickup object
             score++;
             Debug.Log("Score: " + score);
-            
+
             // Disable or destroy the coin
             other.gameObject.SetActive(false); // Or Destroy(other.gameObject);
+        }
+        else if (other.CompareTag("Trap"))
+        {
+            // Decrement health when player touches a Trap object
+            health--;
+            Debug.Log("Health: " + health);
         }
     }
 }
