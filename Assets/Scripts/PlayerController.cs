@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float speed = 5.0f; // Adjustable speed in the Inspector
+    public float speed; // Adjustable speed in the Inspector
     private int score = 0;
     public int health = 5;
 
@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
         float verticalInput = Input.GetAxis("Vertical");
 
         // Calculate movement direction
-        Vector3 movement = new Vector3(horizontalInput, 0.0f, verticalInput);
+        Vector3 movement = new Vector3(horizontalInput, 0, verticalInput);
         
         // Normalize the movement vector to avoid diagonal movement being faster
         movement.Normalize();
@@ -45,6 +45,11 @@ public class PlayerController : MonoBehaviour
             // Decrement health when player touches a Trap object
             health--;
             Debug.Log("Health: " + health);
+        }
+        else if (other.CompareTag("Goal"))
+        {
+            // Player has touched the goal
+            Debug.Log("You win!");
         }
     }
 }

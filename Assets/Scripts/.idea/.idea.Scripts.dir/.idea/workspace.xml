@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f0c3f039-1bf8-44e3-bbc2-4645b2fc5b0c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../maze.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../maze.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +51,7 @@
       <workItem from="1693382295161" duration="12000" />
       <workItem from="1693382428025" duration="515000" />
       <workItem from="1693398234431" duration="11000" />
+      <workItem from="1693399694329" duration="3000" />
     </task>
     <servers />
   </component>
