@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="f0c3f039-1bf8-44e3-bbc2-4645b2fc5b0c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +23,10 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -40,6 +47,7 @@
       <updated>1693382278539</updated>
       <workItem from="1693382280268" duration="7000" />
       <workItem from="1693382295161" duration="12000" />
+      <workItem from="1693382428025" duration="515000" />
     </task>
     <servers />
   </component>
