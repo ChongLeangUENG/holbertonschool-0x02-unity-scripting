@@ -13,6 +13,21 @@ public class PlayerController : MonoBehaviour
         // Initialization code if needed
     }
 
+    void Update()
+    {
+        if (health == 0)
+        {
+            Debug.Log("Game Over!");
+
+            // Reset health and score
+            health = 5;
+            score = 0;
+
+            // Reload the current scene
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+    }
+
     private void FixedUpdate()
     {
         // Get input values
