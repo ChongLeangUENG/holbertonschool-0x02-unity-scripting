@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float speed = 5.0f; // Adjustable speed in the Inspector
+    private int score = 0;
 
     private void Start()
     {
@@ -25,5 +26,18 @@ public class PlayerController : MonoBehaviour
 
         // Move the player
         transform.Translate(movement * speed * Time.fixedDeltaTime);
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Pickup"))
+        {
+            // Increment score when player touches a Pickup object
+            score++;
+            Debug.Log("Score: " + score);
+            
+            // Disable or destroy the coin
+            other.gameObject.SetActive(false); // Or Destroy(other.gameObject);
+        }
     }
 }
